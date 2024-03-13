@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 main {
@@ -11,6 +12,12 @@ main {
 .flex-columns {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.flex-columns-footer {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -42,13 +49,14 @@ header {
 .icone {
     height: 2vh;
     margin: 0 1vw;
+    filter: brightness(0) invert(100%);
 }
 
 /* main */
 
 main {
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .boxfoto {
@@ -59,6 +67,14 @@ main {
 
 .foto {
     width: 18vw;
+
+}
+
+.foto2 {
+    width: 18vw;
+    position: absolute;
+    top: 0;
+    left: 0;
 
 }
 
@@ -100,4 +116,36 @@ main {
     top: 75%;
     left: 0;
 
+}
+
+.heart {
+    height: 3vh;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    background-color: white;
+}
+
+.foto2:hover {
+    opacity: 0%;
+}
+
+/* footer */
+
+footer {
+    padding: 2vh 8vw;
+    height: 10vh;
+    background-color: #222;
+    color: white;
+}
+
+.footer-info {
+    margin-right: 0.5vw;
+
+}
+
+.logo-social {
+    margin-top: 1vh;
+    height: 2vh;
+    filter: brightness(0) invert(100%);
 }
